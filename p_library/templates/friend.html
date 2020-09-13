@@ -1,0 +1,18 @@
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+Всего друзей {{ friends|length }}:
+<ul class="list-group">
+	{% for friend in friends %}
+	<li class="list-group-item">
+		{{ friend.name }}
+		<ul class="list-group">
+			{% for book in friend.books.all %}
+			<li class="list-group-item"> {{ book.title }}</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endfor %}
+</ul>
+</body>

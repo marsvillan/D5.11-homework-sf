@@ -1,0 +1,6 @@
+{
+  "name": "Python SkillFactory D5",
+  "description": "SkillFactory D5 learining project Djungo",
+  "image": "heroku/python",
+  "keywords": ["python", "django", "postgres" ]
+}
